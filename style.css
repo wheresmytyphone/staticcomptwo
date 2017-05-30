@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: "varela round";
+}
+
+body {
+    background-color: #CECECE;
+}
+header {
+  height: 100px;
+  background-color: #292F36;
+  color: #F7F7F7;
+}
+
+.links {
+  position: relative;
+  top: 55px;
+  margin-right: 50px;
+  color: #A8A7A7;
+}
+
+.logo {
+  position: relative;
+  top: 5px;
+  font-size: 50px;
+  text-align: right;
+}
+
+.username {
+    text-align: right;
+    margin-bottom: 0px;
+    color: #A8A7A7;
+}
+
+
+header p {
+  display: inline-block;
+}
+
+.shares {
+  margin: 50px 0px;
+  font-size: 40px;
+  color: #4B4B4B;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  display: inline-block;
+  margin: 5px;
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 5px  #7F7F7F
+}
+
+.card-header {
+  background-color: #4ECDC4;
+  height: 133px;
+  padding: 10px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  border: 2px solid #E2E2E2;
+}
+
+.content {
+    margin-bottom: 13px;
+}
+input {
+  width: 279px;
+  height: 75px;
+  margin: 5px  0px;
+}
+
+.views, .view-count {
+  text-align: right;
+  color: #F7F7F7;
+}
+
+.view-count {
+  font-size: 40px;
+}
+
+@media (max-width: 624px) {
+
+  .card {
+    width: 95%;
+    margin: auto;
+    display: block;
+  }
+
+  /*.container {
+    margin: 0 auto;
+    width: 300px;
+  }*/
+}
+
+@media (max-width: 330px) {
+
+  .logo {
+    text-align: center;
+  }
+
+}
