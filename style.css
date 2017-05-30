@@ -25,6 +25,7 @@ header {
   top: 5px;
   font-size: 50px;
   text-align: right;
+  font-family: "questrial"
 }
 
 .username {
@@ -38,17 +39,28 @@ header p {
   display: inline-block;
 }
 
+.video {
+  display: none;
+}
+
 .shares {
-  margin: 50px 0px;
+  margin: 50px 0px 50px 10px;;
   font-size: 40px;
   color: #4B4B4B;
 }
 
+hr {
+  position: relative;
+  bottom: 53px;
+  border: 1px solid #4B4B4B;
+  width: 90%;
+  margin-left: 10px;
+}
 .card {
   width: 300px;
   height: 400px;
   display: inline-block;
-  margin: 5px;
+  margin: 10px 5px;
   background-color: #FAFAFA;
   box-shadow: 0px 0px 5px  #7F7F7F
 }
@@ -91,7 +103,7 @@ input {
 
   .card {
     width: 95%;
-    margin: auto;
+    margin: 20px auto;
     display: block;
   }
 
@@ -101,10 +113,46 @@ input {
   }*/
 }
 
-@media (max-width: 330px) {
+@media (max-width: 500px) {
+
+  .p-video {
+    display: none;
+  }
+
+  .video {
+    display: inline;
+  }
+}
+
+@media (max-width: 400px) {
 
   .logo {
+    /*text-align: center;*/
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .links {
+    margin-right: 45px;
+  }
+
+
+  .logo {
+    top: -2px;
+    left: 5px;
+  }
+
+  .video {
+    display: inline;
+  }
+
+  .header {
+    height: 150px;
+  }
+
+  .nav {
     text-align: center;
   }
+
 
 }
