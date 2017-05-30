@@ -8,7 +8,7 @@ body {
     background-color: #CECECE;
 }
 header {
-  height: 100px;
+  height: 110px;
   background-color: #292F36;
   color: #F7F7F7;
 }
@@ -20,18 +20,31 @@ header {
   color: #A8A7A7;
 }
 
+.link1 {
+  margin-left: 10px;
+}
+
+.icon {
+  height: 20px;
+  position: relative;
+  top: 5px;
+  right: 5px;
+}
+
 .logo {
   position: relative;
   top: 5px;
   font-size: 50px;
   text-align: right;
-  font-family: "questrial"
+  font-family: "questrial";
+  /*right: 10px*/
 }
 
 .username {
     text-align: right;
     margin-bottom: 0px;
     color: #A8A7A7;
+    margin-right: 10px;
 }
 
 
@@ -69,6 +82,8 @@ hr {
   background-color: #4ECDC4;
   height: 133px;
   padding: 10px;
+  background-image: url(images/guy.jpg);
+  background-position: 50% 40%;
 }
 
 .card-content {
@@ -92,11 +107,11 @@ input {
 
 .views, .view-count {
   text-align: right;
-  color: #F7F7F7;
+  color: #4B4B4B;
 }
 
 .view-count {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 @media (max-width: 624px) {
@@ -132,10 +147,15 @@ input {
     bottom: 50px;
   }
 
-  .links {
-    margin-right: 45px;
+  .username {
+    position: relative;
+    top: 5px
   }
 
+
+.icon {
+  display: none;
+}
 
   .logo {
     top: -2px;
@@ -152,7 +172,12 @@ input {
 
   .nav {
     text-align: center;
+    display: flex;
   }
 
+  .links {
+    margin: 0px;
+    flex:auto;
+  }
 
 }
